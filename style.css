@@ -17,7 +17,18 @@ html, body {
     margin: 0;
 }
 
+img.emoji {
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+}
+
+h1 img.emoji {
+    vertical-align: text-bottom;
+}
+
 .header {
+    z-index: 10;
     background: #F9AC53;
     height: 3em;
     line-height: 3em;
@@ -42,7 +53,7 @@ html, body {
 }
 
 .hbox .head {
-    flex: 2;
+    flex: 3;
 }
 
 .hbox .text {
@@ -75,6 +86,10 @@ ul {
 ul li:first-of-type {
     font-size: 200%;
     font-weight: bold;
+}
+
+ul li {
+    font-size: 150%;
 }
 
 .relative {
